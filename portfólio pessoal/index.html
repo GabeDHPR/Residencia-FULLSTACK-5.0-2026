@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio Gabe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="desktop">
+        <div class="icone" onclick="abrirJanela('janela-sobre', this)">
+            <div class="bolha"><img src="visuais/168.png" alt="Sobre"></div>
+            <span class="fonte-arquivo">Sobre mim</span>
+        </div>
+        <div class="icone" onclick="abrirJanela('janela-formações', this)">
+            <div class="bolha"><img src="visuais/livro.png" alt="Formações"></div>
+            <span class="fonte-arquivo">Formações</span>
+        </div>
+        <div class="icone" onclick="abrirJanela('janela-projetos', this)">
+            <div class="bolha"><img src="visuais/218.png" alt="Projetos"></div>
+            <span class="fonte-arquivo">Projetos</span>
+        </div>
+        <div class="icone" onclick="abrirJanela('janela-contatos', this)">
+            <div class="bolha"><img src="visuais/120.png" alt="Contatos"></div>
+            <span class="fonte-arquivo">Contatos</span>
+        </div>
+        <div class="icone" onclick="abrirJanela('janela-experiencias', this)">
+            <div class="bolha"><img src="visuais/098.png" alt="Experiências"></div>
+            <span class="fonte-arquivo">Experiências</span>
+        </div>
+    </div>
+
+    <div id="janela-sobre" class="aero-window" style="display: none;" onmousedown="trazerParaFrente(this)">
+        <div class="aero-titlebar">
+            <img src="visuais/168.png" class="aero-titlebar-icon" alt="icon">
+            <div class="aero-titlebar-text">Sobre mim</div>
+            <div class="aero-caption">
+                <button class="min" title="Minimizar"></button>
+                <button class="max" title="Maximizar"></button>
+                <button class="close" title="Fechar" onclick="fecharJanela('janela-sobre')"></button>
+            </div>
+        </div>
+             <div class="aero-body sobre-card">
+            <div class="sobre-conteudo-superior">
+                
+                <div class="sobre-textos-iniciais">
+                    <p class="sobre-texto">Me chamo <strong>Gabriel Dahlem Pereira</strong>, atualmente tenho 23 anos e moro em <strong>Canoas, RS</strong>. Sou um estudante na área da tecnologia mais especificamente <strong>TADS no IFRS</strong>.</p>
+                    <p class="sobre-texto">Adoro tecnologias retros e estilos que nos remetem ao passado, por isso criei esse site no estilo <strong>Frutiger Aero</strong> remetente à época do <strong>Windows 7</strong>, onde o futuro era visto de maneira utópica, conectando muito o visual tecnológico com o natural.</p> 
+                </div>
+                <img src="visuais/gabriel-foto.png" alt="Gabriel" class="sobre-foto">
+            </div>
+            <div class="sobre-conteudo-inferior">
+            <p class="sobre-texto">Antes de vir para essa área eu era muito das artes, adoro designs e também dançar (inclusive fiz dança na <strong>UFRGS</strong> mas acabei desistindo e trocando para <strong>TADS no IFRS</strong>). Então já sabia que quando eu fizesse essa mudança de carreira eu iria ficar mais ligado na parte visual da tecnologia.</p>
+            
+            <p class="sobre-texto">Assim espero conseguir trazer a beleza de um visual bem feito com funcionalidade e interfaces intuitivas <span class="sobre-smile">:)</span></p>
+            </div>
+        </div>
+        <div class="aero-statusbar">
+            <div class="aero-gripper"></div>
+        </div>
+    </div>
+
+    <div id="janela-formações" class="aero-window" style="display: none;" onmousedown="trazerParaFrente(this)">
+        <div class="aero-titlebar">
+            <img src="visuais/livro.png" class="aero-titlebar-icon" alt="icon">
+            <div class="aero-titlebar-text">Formações</div>
+            <div class="aero-caption">
+                <button class="min" title="Minimizar"></button>
+                <button class="max" title="Maximizar"></button>
+                <button class="close" title="Fechar" onclick="fecharJanela('janela-formações')"></button>
+            </div>
+        </div>
+        <div class="aero-body">
+            <div class="formacao-card">
+                <div class="formacao-conteudo">
+                    <h3 class="formacao-titulo">Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="formacao-instituicao">Instituto Federal do Rio Grande do Sul (IFRS)</p>
+                    <p class="formacao-periodo">2025 - 2028</p>
+                </div>
+                <img src="visuais/ifrs-logo.png" alt="Logo IFRS" class="formacao-logo">
+            </div>
+        </div>
+        <div class="aero-statusbar">
+            <div class="aero-gripper"></div>
+        </div>
+    </div>
+
+    <div id="janela-projetos" class="aero-window" style="display: none; top: 100px; left: 150px;" onmousedown="trazerParaFrente(this)">
+        <div class="aero-titlebar">
+            <img src="visuais/218.png" class="aero-titlebar-icon" alt="icon">
+            <div class="aero-titlebar-text">Projetos</div>
+            <div class="aero-caption">
+                <button class="min" title="Minimizar"></button>
+                <button class="max" title="Maximizar"></button>
+                <button class="close" title="Fechar" onclick="fecharJanela('janela-projetos')"></button>
+            </div>
+        </div>
+        <div class="aero-body">
+            <div class="projetos-lista">
+                <div class="projeto-card">
+                    <a href="https://github.com/leowrm/verificador-fraude" target="_blank" class="projeto-link">
+                        <img src="visuais/github.png" alt="GitHub" class="projeto-icone">
+                        <span class="projeto-nome">verificador-fraude</span>
+                    </a>
+                    <p class="projeto-descricao">Programa desenvolvido para identificar mensagens fradulentas (phishing) feito durante minha residência no instituto ELDORADO.</p>
+                </div>
+                <div class="projeto-card">
+                    <a href="https://github.com/GabeDHPR/atividade-gastos" target="_blank" class="projeto-link">
+                        <img src="visuais/github.png" alt="GitHub" class="projeto-icone">
+                        <span class="projeto-nome">atividade-gastos</span>
+                    </a>
+                    <p class="projeto-descricao">Programa para gerenciar gastos e despesas pessoais feito durante minha residência no instituto ELDORADO. </p>
+                </div>
+                <div class="projeto-card">
+                    <a href="https://github.com/GabeDHPR/portfolio-frutiger-aero" target="_blank" class="projeto-link">
+                        <img src="visuais/github.png" alt="GitHub" class="projeto-icone">
+                        <span class="projeto-nome">portfolio-frutiger-aero</span>
+                    </a>
+                    <p class="projeto-descricao">Portfólio desenvolvido com o estilo Frutiger Aero durante minha residência no instituto ELDORADO.</p>
+                </div>
+            </div>
+        </div>
+        <div class="aero-statusbar">
+            <div class="aero-gripper"></div>
+        </div>
+    </div>
+
+    <div id="janela-contatos" class="aero-window" style="display: none; top: 500px; left: 150px;" onmousedown="trazerParaFrente(this)">
+        <div class="aero-titlebar">
+            <img src="visuais/120.png" class="aero-titlebar-icon" alt="icon">
+            <div class="aero-titlebar-text">Contatos</div>
+            <div class="aero-caption">
+                <button class="min" title="Minimizar"></button>
+                <button class="max" title="Maximizar"></button>
+                <button class="close" title="Fechar" onclick="fecharJanela('janela-contatos')"></button>
+            </div>
+        </div>
+        <div class="aero-body">
+            <div class="contatos-lista">
+                <a class="contato-item" onclick="copiarEmail(event)">
+                    <img src="visuais/gmail.png" alt="Gmail" class="contato-icone">
+                    <span class="contato-nome">Gmail</span>
+                </a>
+                <a href="https://github.com/GabeDHPR" class="contato-item" target="_blank">
+                    <img src="visuais/github.png" alt="GitHub" class="contato-icone">
+                    <span class="contato-nome">GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gabrieldahlem/" class="contato-item" target="_blank">
+                    <img src="visuais/linkedin.png" alt="LinkedIn" class="contato-icone">
+                    <span class="contato-nome">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+        <div class="aero-statusbar">
+            <div class="aero-gripper"></div>
+        </div>
+    </div>
+
+    <div id="janela-experiencias" class="aero-window" style="display: none; top: 100px; left: 150px;" onmousedown="trazerParaFrente(this)">
+        <div class="aero-titlebar">
+            <img src="visuais/098.png" class="aero-titlebar-icon" alt="icon">
+            <div class="aero-titlebar-text">Experiências</div>
+            <div class="aero-caption">
+                <button class="min" title="Minimizar"></button>
+                <button class="max" title="Maximizar"></button>
+                <button class="close" title="Fechar" onclick="fecharJanela('janela-experiencias')"></button>
+            </div>
+        </div>
+        <div class="aero-body">
+            <div class="experiencia-card">
+                <div class="experiencia-logos">
+                    <img src="visuais/eldorado-logo.png" alt="Logo Eldorado" class="experiencia-logo">
+                    <span class="experiencia-separador">+</span>
+                    <img src="visuais/petrobras-logo.png" alt="Logo Petrobras" class="experiencia-logo">
+                </div>
+                <div class="experiencia-conteudo">
+                    <h3 class="experiencia-titulo">Residência FULLSTACK 5.0</h3>
+                    <p class="experiencia-resumo">Programa de formação em desenvolvimento full stack, com foco em práticas modernas e alinhamento ao mercado de trabalho.</p>
+                   <p> <a href="https://www.eldorado.org.br"  class="experiencia-instituicao" target="_blank">Instituto Eldorado</a></p>
+                    <p class="experiencia-empresa">Em parceria com Petrobras</p>
+                    <p class="experiencia-periodo">2025</p>
+                </div>
+            </div>
+        </div>
+        <div class="aero-statusbar">
+            <div class="aero-gripper"></div>
+        </div>
+    </div>
+    <div id="chat-msn-flutuante" class="chat-msn-flutuante" onmousedown="trazerParaFrente(this)">
+    <div class="chat-msn-drag-handle"></div>
+    
+    <iframe 
+        src="./emulação de um chat msn/dist/index.html" 
+        style="width: 100%; height: 100%; border: none; display: block;">
+    </iframe>
+    
+</div>
+
+    <div id="aviso-toast" class="aviso-toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+rg, cpf, atualizacao cadastral, confirme seus dados, foto do documento, frente e verso, biometria facial,
+selfie, codigo de seguranca, codigo de verificacao, token, senha de acesso, senha do aplicativo, validacao de seguranca,
+dados bancarios, chave pix, numero do cartao, codigo cvv, codigo de segurança, codigo do verso, conta bloqueada, central de seguranca,
+setor antifraude, data de nascimento, nome da mae, comprovante de residencia, numero da conta, agencia e conta,
+validade do cartao, senha de 4 digitos, senha de 6 digitos, senha, pin, codigo sms, autenticacao de dois fatores,
+liberar acesso, cancelar compra, cartao clonado, estorno, pix copia e cola, reconhecimento facial
